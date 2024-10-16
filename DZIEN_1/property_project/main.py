@@ -14,3 +14,5 @@ print(p.year)
 
 p.year = 1970,7
 print(p.year)
+
+print(p.city)
