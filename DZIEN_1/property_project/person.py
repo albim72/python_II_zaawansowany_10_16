@@ -14,7 +14,7 @@ class Person:
     @property
     def name(self):
         return self._name
-    
+
     @name.setter
     def name(self,new_name):
         self._name = new_name
@@ -24,7 +24,16 @@ class Person:
         value = datetime.now().year - self._year
         age_ = value + self.howmany
         return value, age_
-        
+
+    @property
+    def year(self):
+        return self._year
+
+    @year.setter
+    def year(self,times):
+        newyear, month = times
+        self._year = newyear + month/12
+
 
 
 
