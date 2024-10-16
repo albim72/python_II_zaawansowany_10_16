@@ -2,6 +2,10 @@ from person import Person
 
 p = Person("Jacek",1976,"Lublin")
 print(p)
-print(p._name)
-p._name = "Jarek"
-print(p._name)
+print(p.name)
+p.name = "Jarek"
+print(p.name)
+
+print(p.age)
+print(f"wiek ososby: {p.age[0]} lat")
+print(f"wiek osoby za {p.howmany} lat - {p.age[1]} lat")
