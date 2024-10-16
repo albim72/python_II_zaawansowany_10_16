@@ -42,8 +42,11 @@ class Person:
     def city(self,newcity):
         self._city = newcity
 
+
+    _x = 7
     @property
     def policz(self):
+        # self._x = 7
         return 5*self._x
 
     @policz.setter
