@@ -1,19 +1,17 @@
 from abc import ABC, abstractmethod
 
-# Interfejs samochodu
-class Car(ABC):
+# Interfejs jednostki
+class Unit(ABC):
     @abstractmethod
-    def description(self) -> str:
+    def attack(self):
         pass
 
-# Interfejs silnika
-class Engine(ABC):
+# Interfejs fabryki jednostek
+class UnitFactory(ABC):
     @abstractmethod
-    def start(self) -> str:
+    def create_warrior(self) -> Unit:
         pass
-
-# Interfejs baterii
-class Battery(ABC):
+    
     @abstractmethod
-    def charge(self) -> str:
+    def create_mage(self) -> Unit:
         pass
