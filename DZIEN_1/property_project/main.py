@@ -16,3 +16,6 @@ p.year = 1970,7
 print(p.year)
 
 print(p.city)
+
+p.policz=45
+print(p.policz)
