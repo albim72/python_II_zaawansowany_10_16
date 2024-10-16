@@ -34,6 +34,14 @@ class Person:
         newyear, month = times
         self._year = newyear + month/12
 
+    @property
+    def city(self):
+        return self._city
+
+    @city.setter
+    def city(self,newcity):
+        self._city = newcity
+
 
 
 
