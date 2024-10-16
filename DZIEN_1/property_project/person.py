@@ -10,3 +10,23 @@ class Person:
 
     def __repr__(self):
         return f"osoba: {self._name}, rok urodzenia: {self._year}, miasto: {self.city}"
+
+    @property
+    def name(self):
+        return self._name
+    
+    @name.setter
+    def name(self,new_name):
+        self._name = new_name
+
+    @property
+    def age(self):
+        value = datetime.now().year - self._year
+        age_ = value + self.howmany
+        return value, age_
+        
+
+
+
+
+
