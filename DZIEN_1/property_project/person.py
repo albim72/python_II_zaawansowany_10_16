@@ -8,3 +8,5 @@ class Person:
         self._desc = "uczestnik konkursu"
         self.howmany = 9
 
+    def __repr__(self):
+        return f"osoba: {self._name}, rok urodzenia: {self._year}, miasto: {self.city}"
