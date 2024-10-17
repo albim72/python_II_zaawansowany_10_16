@@ -16,3 +16,12 @@ print(f"Rozwiązanie układu równań (x,y,z): {x}")
 #weryfikacja: mnożenie macierzy A i wektora x powinno dac B
 B_check  = np.dot(A,x)
 print(f"Weryfikacja (A*x): {B_check}")
+
+print("__ utworzenie tablicy 11 wymiarowej __")
+array_11d = np.zeros((2,2,2,2,2,2,2,2,2,2,2))
+
+print(f'kształt tablicy: {array_11d.shape}')
+print(f'liczba wymiarów: {array_11d.ndim}')
+
+print(array_11d)
+
